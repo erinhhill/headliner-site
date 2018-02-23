@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<title>Headliner Labs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="innerfade.js">
+<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Avenir Next Ultra Light", "Avenir Light", "Avenir Next Regular", 'Lato', sans-serif;} 
+
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+	overflow: hidden;
+}
+
+.mySlides { 
+ background-position: center;
+    background-size: cover;
+	overflow: hidden;
+	max-width: 100%;
+    max-height: auto;
+}
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+/* articles */
+.slider {
+  width: 100%;
+  background-color: w3-dark-gray;
+  margin: 10px auto;
+  height: 200px;
+}
+
+.slidercontainer {
+  width: 85%;
+  height: 200px;
+  margin: 0px auto;
+}
+
+.sliderspot {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  display: inline;
+  cursor: pointer;
+  cursor: hand;
+  align-content: center;
+}
+
+.sliderspot:hover {
+  background-color: w3-dark-gray;
+}
+
+.spot1 {
+  margin: 85px 30px;
+  float: left;
+}
+
+.spot2 {
+  margin: 85px 30px;
+  float: right;
+}
+
+#sliderul {
+  list-style-type: none;
+  margin-left: 4%;
+  width: 75%;
+  text-align: center;
+  height: 150px;
+  padding: 10px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.slidercontent {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #dfdfdf;
+}
+
+.slidercontent span {
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+  color: #dfdfdf;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d5 w3-card-2" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">H</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#services" class="w3-bar-item w3-button">SERVICES</a>
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#work" class="w3-bar-item w3-button"> OUR WORK</a>
+      <a href="https://headlinerlabs.com/blog/" class="w3-bar-item w3-button"> BLOG</a>
+      <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
+    </div>
+    
+<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-iem w3-button"> SERVICES</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">OUR WORK</a>
+  <a href="https://headlinerlabs.com/blog/" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="w3-display-container w3-dark-gray" id="home">
+	<img class="mySlides" src="slideshow/WWD.jpg"> 
+	<img class="mySlides" src="slideshow/DonniCharm.jpg">
+	<img class="mySlides" src="slideshow/JemmaWynne.jpg">
+	<img class="mySlides" src="slideshow/WWD2.jpg">
+  <div class="w3-display-left w3-text-white" style="padding:24px">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <span class="w3-jumbo w3-hide-small"><b>HEADLINER LABS</b></span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">HEADLINER LABS</span><br>
+        <span class="w3-large">Unlock the Power of Messaging</span>
+    <p><a href="https://www.messenger.com/t/448673832142578" class="w3-button w3-white w3-padding-large w3-medium w3-margin-top w3-opacity w3-hover-dark-gray">Learn More</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 24px">
+    <a href="https://www.facebook.com/Headliner-Labs-448673832142578/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/HeadlinerLabs"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company-beta/10316898/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+</header>
+
+<!-- Introduction Blurb -->
+<div class="w3-container w3-theme-d5">
+<div class="w3-col m8">
+    <br><br>
+    <h3>HEADLINER LABS</h3>
+      <p>We’ve done the work, you see the sales. With plug and play modules for every ecommerce scenario, your bot will be strategically deployed to convert leads into customers, and drive repeat sales. Are you breaking the mold? Our team is on hand to work with you on unique flows to deliver the best experience into the hands of your customers.</p><br><br>
+    </div>
+    </div>
+
+
+<!-- Services Section -->
+<div class="w3-container w3-theme-d5" style="padding:64px 16px" id="services">
+  <h2 class="w3-center" style="color:#dfdfdf">SERVICES</h2>
+  <br>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style="color:#dfdfdf"></i>
+      <p class="w3-center w3-large" style="color:#dfdfdf">Data and Analytics</p>
+      <br>
+      <p style="color:#dfdfdf">Your bot is up and running instantly, with hosting and deployment on our platform. Your dedicated server keeps your insights confidential, but we relay those insights to you in a real-time dashboard, complete with actionable data insights and in depth conversational analysis. You can even jump into the bot conversations from our dashboard to  interface directly with customers.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo" style="color:#dfdfdf"></i>
+      <p class="w3-center w3-large" style="color:#dfdfdf">Design Expertise</p>
+      <br>
+      <p style="color:#dfdfdf">need text</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo" style="color:#dfdfdf"></i>
+      <p class="w3-center w3-large" style="color:#dfdfdf"> 
+Intelligent Conversational Technology
+</p>
+      <br>
+      <p style="color:#dfdfdf">Our conversational bot platform leverages wide industry experience and expertise to power your bot with intelligence, natural language processing, and relationship memory. The artificial intelligence engine continuously learns and evolves to meet your customer needs faster and more efficiently.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- About Section -->
+<div class="w3-container w3-dark-gray" id="about">
+<div class="w3-col m8">
+    <br><br>
+      <h3>ABOUT HEADLINER LABS</h3>
+      <p>At Headliner we build best-in-class chatbots for the world's best brands. Designed to intelligently and proactively engage you customers, our chatbots combine the best front end tools with robust, algorithmic backend engines. Collectively, our team has over 25 years of experience building smart databases and recommendation engines, connecting offline "things" with online systems.</p><br><br>
+    </div>
+    </div>
+    
+ <!-- Select Experience Title -->
+<div class="w3-container w3-theme-d5" style="padding:50px 16px" id="work">
+  <h2 class="w3-center" style="color:#dfdfdf">SELECT EXPERIENCES</h2>
+    </div>
+
+<!-- Select Your Experience -->
+<div class="w3-container w3-theme-d5" style="padding:0px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 style="padding:0px 60px; color:#dfdfdf; text-align:start">PERSONAL SHOPPING</h3>
+      <p style="padding:0px 60px; color:#dfdfdf; text-align:start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p style="padding:0px 60px; text-align:start"><a href="https://www.messenger.com/t/124349770099" class="w3-button w3-dark-gray"><i class="fa fa-facebook-official"> </i> View On Messenger</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img style="align-content:center;padding:0px 150px" class="w3-image w3-round-large" src="donnicharm.png" alt="Graphic">
+    </div>
+  </div>
+</div>
+<!-- Select Your Experience 2 -->
+<div class="w3-container w3-theme-d4" style="padding-top:110px; padding-bottom:0px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+       <img style="align-content:center;padding:0px 150px" class="w3-image w3-round-large" src="WWD.png" alt="Graphic">
+    </div>
+    <div class="w3-col m6">
+       <h3 style="padding:0px 60px; color:#dfdfdf; text-align:end">WWD</h3>
+      <p style="padding:0px 60px; color:#dfdfdf; text-align:end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p style="padding:0px 60px; text-align:end"><a href="https://www.messenger.com/t/19457049254" class="w3-button w3-dark-gray"><i class="fa fa-facebook-official"> </i> View On Messenger</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-dark-gray" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lorem ipsum dolor. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York, NY</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 0000000</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-theme-d5" type="submit">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+    
+      <!-- Add Google Maps -->
+      <div id="googleMap" name="googleMap" class="w3-greyscale-max" style="width:600px;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-theme-d5 w3-padding-64">
+  <a href="#home" class="w3-button w3-dark-grey"><i class="fa fa-caret-up w3-margin-right"></i>Back to top</a>
+  <div class="w3-large w3-section">
+    <a href="https://www.facebook.com/Headliner-Labs-448673832142578/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/HeadlinerLabs"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company-beta/10316898/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(40.707909, -74.008515),
+    zoom:12,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+//article slider
+
+$(".slidercontent").hide();
+$(".slidercontent:nth-child(1)").fadeIn("slow");
+
+var current = 1;
+var max = $( "li" ).length +1;
+
+
+//function to change to next quote
+function changeUp() {
+  $(".slidercontent").hide();
+  current += 1;
+  if (current === max) {
+    current = 1;
+  }
+$(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
+}
+
+function changeDown() {
+  $(".slidercontent").hide();
+  current -= 1;
+
+  if (current === 0) {
+    current = max - 1;
+  }
+
+  $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
+}
+
+startChange();
+
+$(".sliderspot2").click(function() { 
+  stopChange();
+  changeUp();
+  startChange();
+});
+
+$(".sliderspot").click(function() {
+  stopChange();
+  changeDown();
+  startChange();
+});
+
+//FUNCTIONS TO CONTROL TIMING CHANGES
+function startChange() {
+changeIt = setInterval(function(){ 
+changeUp();
+}, 5000);
+};
+
+function stopChange() {
+    clearInterval(changeIt);
+}
+
+//Header Slideshow
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+</body>
+</html>
+
